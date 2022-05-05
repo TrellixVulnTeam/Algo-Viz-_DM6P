@@ -1,9 +1,6 @@
 /**
  *  A Chess UI generator which takes an object of Engine class and visualize that engines steps.
- *  Available Engines : NQueensBacktrackingEngine, NQueensGeneticEngine
- *  Developer : Amir Kabiri
- *  Github : https://github.com/amirkabiri
- *  Site : https://akdev.ir
+ *  Available Engines : NQueensBacktrackingEngine, NQueensGen
  */
 
 class ChessUI{
