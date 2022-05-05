@@ -1,3 +1,7 @@
+/**
+ *  A Chess UI generator which takes an object of Engine class and visualize that engines steps.
+ *  Available Engines : NQueensBacktrackingEngine, NQueensGen
+ */
 
 class ChessUI{
     constructor(engine, { parent, size, blackColor, whiteColor } = {}){
