@@ -1,10 +1,11 @@
-import { AwsRum } from 'aws-rum-web';
+
 const express = require("express");
 const app = express();
 const path = require('path');
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 app.use(express.static('public'));
+const AwsRum = require('aws-rum-web');
 
 try {
   const config = {
@@ -30,6 +31,7 @@ try {
 } catch (error) {
   // Ignore errors thrown during CloudWatch RUM web client initialization
 }
+
 
 app.get("/", (req,res)=>{
     return res.render('home',{
